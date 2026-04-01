@@ -1,0 +1,1 @@
+docker exec -it spark /opt/spark/bin/spark-submit --conf spark.jars.ivy=/tmp/ivy2 --packages org.apache.iceberg:iceberg-spark-runtime-3.5_2.12:1.5.0,org.apache.hadoop:hadoop-aws:3.3.4,software.amazon.awssdk:bundle:2.20.18,org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.3 --conf spark.driver.extraPythonPath=/opt/spark-apps/libs /opt/spark-apps/Parse_account.py      

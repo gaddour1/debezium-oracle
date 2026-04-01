@@ -1,0 +1,31 @@
+{
+  "name": "BIATIT-connecteur_v1",
+  "config": {
+    "connector.class": "io.debezium.connector.oracle.OracleConnector",
+    "tasks.max": "1",
+    "database.server.name": "account",                   
+    "database.schema": "C##DBZUSER",                     
+    "database.hostname": "oracle11g-xe",
+    "database.port": "1521",
+    "database.user": "c##dbzuser",
+    "database.password": "dbz",
+    "database.dbname": "XE",
+    "database.out.server.name": "account_out",
+    "database.history.kafka.bootstrap.servers": "kafka:9092",
+    "database.history.kafka.topic": "schema-changes.account",
+    "database.connection.adapter": "logminer",
+    "table.include.list": "C##DBZUSER.ACCOUNT",         
+    "topic.prefix": "account-cdc-test",               
+    "snapshot.mode": "initial",
+    "snapshot.new.tables": "true",
+     "log.mining.strategy": "online_catalog"
+  }
+}
+
+
+
+
+
+
+
+

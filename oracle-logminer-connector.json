@@ -1,0 +1,16 @@
+{
+  "connector.class": "io.debezium.connector.oracle.OracleConnector",
+  "tasks.max": "1",
+  "topic.prefix": "products",
+  "database.server.name": "products",
+  "database.hostname": "oracle11g-xe",
+  "database.port": "1521",
+  "database.dbname": "XE",
+  "database.user": "c##dbzuser",
+  "database.password": "dbz",
+  "database.schema": "C##DBZUSER",
+  "database.connection.adapter": "logminer",
+  "database.history.kafka.bootstrap.servers": "kafka:9092",
+  "database.history.kafka.topic": "schema-changes.products",
+  "database.out.server.name": "products_out"
+}

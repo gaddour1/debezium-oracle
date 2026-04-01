@@ -1,0 +1,27 @@
+{
+  "name": "oracle-baitIT-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.oracle.OracleConnector",
+    "tasks.max": "1",
+    "database.server.name": "products",
+    "database.schema": "OT",
+    "database.hostname": "oracle11g-xe",
+    "database.port": "1521",
+    "database.user": "c##dbzuser",
+    "database.password": "dbz",
+    "database.dbname": "XE",
+    "database.out.server.name": "products_out",
+    "database.history.kafka.bootstrap.servers": "kafka:9092",
+    "database.history.kafka.topic": "schema-changes.products",
+    "database.connection.adapter": "logminer",
+    "table.include.list": "OT.PRODUCTS",
+    "topic.prefix": "product-cdc-test",
+    "snapshot.mode": "initial"
+  }
+}
+
+ 
+
+
+
+

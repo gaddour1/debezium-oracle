@@ -1,0 +1,23 @@
+{
+  "name": "BIATIT-connecteur_19c",
+  "config": {
+    "connector.class": "io.debezium.connector.oracle.OracleConnector",
+    "tasks.max": "1",
+    "topic.prefix": "biat",
+    "database.hostname": "oracle19c",
+    "database.port": "1521",
+    "database.user": "C##DBZUSER",
+    "database.password": "dbz",
+    "database.dbname": "FREE",
+    "database.pdb.name": "FREEPDB1",
+    "database.url": "jdbc:oracle:thin:@//oracle19c:1521/FREE",
+    "schema.history.internal.kafka.bootstrap.servers": "kafka:9092",
+    "schema.history.internal.kafka.topic": "schema-changes.oracle",
+    "table.include.list": "C##DBZUSER.ACCOUNT",
+    "snapshot.mode": "initial",
+    "log.mining.strategy": "online_catalog",
+    "heartbeat.interval.ms": "30000",
+    "decimal.handling.mode": "precise",
+    "lob.enabled": "true"
+  }
+}
