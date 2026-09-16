@@ -14,7 +14,7 @@ Oracle → Debezium / LogMiner → Kafka → Spark Structured Streaming
 
 ### 🛠️ Tech Stack
 
-`Oracle` · `Debezium` · `Kafka` · `Spark` · `PySpark` · `Iceberg` · `MinIO` · `Prometheus` · `Grafana` · `Docker` · `Python`· `CDC`
+`Oracle` · `Debezium` · `Kafka` · `Spark` · `PySpark` · `Iceberg` · `MinIO` · `Prometheus` · `Grafana` · `Docker` · `Python`· `CDC`.`oraclegoldengate`
 
 ### ✨ Features
 
