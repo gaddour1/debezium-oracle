@@ -9,7 +9,7 @@ Oracle → Debezium / LogMiner → Kafka → Spark Structured Streaming
                                       ↓
                               Apache Iceberg → MinIO
                                       ↓
-                              Prometheus → Grafana
+                              Prometheus → Grafana(Monitoring)
 ```
 
 ### 🛠️ Tech Stack
